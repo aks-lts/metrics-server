@@ -60,6 +60,10 @@ func (m *nodeMetrics) New() runtime.Object {
 	return &metrics.NodeMetrics{}
 }
 
+// Destroy implements rest.Storage interface
+func (m *nodeMetrics) Destroy() {
+}
+
 // Kind implements rest.KindProvider interface
 func (m *nodeMetrics) Kind() string {
 	return "NodeMetrics"
@@ -164,4 +168,9 @@ func (m *nodeMetrics) getMetrics(nodes ...*corev1.Node) ([]metrics.NodeMetrics, 
 // NamespaceScoped implements rest.Scoper interface
 func (m *nodeMetrics) NamespaceScoped() bool {
 	return false
+}
+
+// GetSingularName implements rest.SingularNameProvider interface
+func (m *nodeMetrics) GetSingularName() string {
+	return ""
 }

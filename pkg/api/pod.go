@@ -61,6 +61,10 @@ func (m *podMetrics) New() runtime.Object {
 	return &metrics.PodMetrics{}
 }
 
+// Destroy implements rest.Storage interface
+func (m *podMetrics) Destroy() {
+}
+
 // Kind implements rest.KindProvider interface
 func (m *podMetrics) Kind() string {
 	return "PodMetrics"
@@ -176,4 +180,9 @@ func (m *podMetrics) getMetrics(pods ...runtime.Object) ([]metrics.PodMetrics, e
 // NamespaceScoped implements rest.Scoper interface
 func (m *podMetrics) NamespaceScoped() bool {
 	return true
+}
+
+// GetSingularName implements rest.SingularNameProvider interface
+func (m *podMetrics) GetSingularName() string {
+	return ""
 }
