@@ -20,6 +20,7 @@ import (
 	"io"
 	"time"
 
+	"github.com/prometheus/prometheus/model/labels"
 	"github.com/prometheus/prometheus/model/textparse"
 	"github.com/prometheus/prometheus/model/timestamp"
 
@@ -44,8 +45,8 @@ func decodeBatch(b []byte, defaultTime time.Time, nodeName string) (*storage.Met
 	}
 	node := &storage.MetricsPoint{}
 	pods := make(map[apitypes.NamespacedName]storage.PodMetricsPoint)
-	parser, err := textparse.New(b, "", false)
-	if err != nil {
+	parser, err := textparse.New(b, "", &labels.SymbolTable{}, textparse.ParserOptions{FallbackContentType: "text/plain"})
+	if err != nil && parser == nil {
 		return nil, fmt.Errorf("failed to initialize Prometheus parser: %w", err)
 	}
 	var (
