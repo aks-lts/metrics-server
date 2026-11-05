@@ -124,15 +124,29 @@ require (
 	sigs.k8s.io/yaml v1.6.0 // indirect
 )
 
-replace go.opentelemetry.io/otel/sdk => go.opentelemetry.io/otel/sdk v1.45.0
+replace github.com/go-openapi/swag v0.23.0 => github.com/go-openapi/swag v0.26.0
 
-replace google.golang.org/grpc => google.golang.org/grpc v1.83.2
-
-replace github.com/prometheus/prometheus v0.304.2 => github.com/prometheus/prometheus v0.311.3
+replace github.com/google/cel-go => github.com/google/cel-go v0.29.0
 
 replace github.com/prometheus/common v0.65.0 => github.com/prometheus/common v0.67.5
 
-replace github.com/go-openapi/swag v0.23.0 => github.com/go-openapi/swag v0.26.0
+replace github.com/prometheus/prometheus v0.304.2 => github.com/prometheus/prometheus v0.311.3
+
+replace go.opentelemetry.io/otel/exporters/otlp/otlptrace => go.opentelemetry.io/otel/exporters/otlp/otlptrace v1.45.0
+
+replace go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc => go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.45.0
+
+replace go.opentelemetry.io/otel/sdk => go.opentelemetry.io/otel/sdk v1.45.0
+
+replace golang.org/x/crypto => golang.org/x/crypto v0.56.0
+
+replace golang.org/x/net => golang.org/x/net v0.60.0
+
+replace golang.org/x/sys => golang.org/x/sys v0.44.0
+
+replace golang.org/x/text => golang.org/x/text v0.41.0
+
+replace google.golang.org/grpc => google.golang.org/grpc v1.83.2
 
 replace k8s.io/api v0.33.2 => k8s.io/api v0.35.3
 
@@ -149,17 +163,3 @@ replace k8s.io/klog/v2 v2.130.1 => k8s.io/klog/v2 v2.140.0
 replace k8s.io/kube-openapi v0.0.0-20250318190949-c8a335a9a2ff => k8s.io/kube-openapi v0.0.0-20250910181357-589584f1c912
 
 replace k8s.io/metrics v0.33.2 => k8s.io/metrics v0.35.3
-
-replace github.com/google/cel-go => github.com/google/cel-go v0.29.0
-
-replace go.opentelemetry.io/otel/exporters/otlp/otlptrace => go.opentelemetry.io/otel/exporters/otlp/otlptrace v1.45.0
-
-replace go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc => go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.45.0
-
-replace golang.org/x/crypto => golang.org/x/crypto v0.56.0
-
-replace golang.org/x/net => golang.org/x/net v0.60.0
-
-replace golang.org/x/sys => golang.org/x/sys v0.44.0
-
-replace golang.org/x/text => golang.org/x/text v0.41.0
