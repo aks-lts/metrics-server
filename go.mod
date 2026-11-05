@@ -124,15 +124,9 @@ require (
 	sigs.k8s.io/yaml v1.6.0 // indirect
 )
 
-replace go.opentelemetry.io/otel/sdk => go.opentelemetry.io/otel/sdk v1.45.0
-
-replace google.golang.org/grpc => google.golang.org/grpc v1.83.2
-
-replace github.com/prometheus/prometheus v0.48.1 => github.com/prometheus/prometheus v0.311.3
-
-replace github.com/prometheus/common v0.46.0 => github.com/prometheus/common v0.67.5
-
 replace github.com/go-openapi/swag v0.22.4 => github.com/go-openapi/swag v0.26.0
+
+replace github.com/google/cel-go => github.com/google/cel-go v0.29.0
 
 replace github.com/google/go-cmp v0.6.0 => github.com/google/go-cmp v0.7.0
 
@@ -140,9 +134,29 @@ replace github.com/onsi/ginkgo/v2 v2.14.0 => github.com/onsi/ginkgo/v2 v2.27.2
 
 replace github.com/onsi/gomega v1.30.0 => github.com/onsi/gomega v1.38.2
 
+replace github.com/prometheus/common v0.46.0 => github.com/prometheus/common v0.67.5
+
+replace github.com/prometheus/prometheus v0.48.1 => github.com/prometheus/prometheus v0.311.3
+
 replace github.com/spf13/cobra v1.8.0 => github.com/spf13/cobra v1.10.0
 
 replace github.com/spf13/pflag v1.0.5 => github.com/spf13/pflag v1.0.10
+
+replace go.opentelemetry.io/otel/exporters/otlp/otlptrace => go.opentelemetry.io/otel/exporters/otlp/otlptrace v1.45.0
+
+replace go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc => go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.45.0
+
+replace go.opentelemetry.io/otel/sdk => go.opentelemetry.io/otel/sdk v1.45.0
+
+replace golang.org/x/crypto => golang.org/x/crypto v0.56.0
+
+replace golang.org/x/net => golang.org/x/net v0.60.0
+
+replace golang.org/x/sys => golang.org/x/sys v0.44.0
+
+replace golang.org/x/text => golang.org/x/text v0.41.0
+
+replace google.golang.org/grpc => google.golang.org/grpc v1.83.2
 
 replace k8s.io/api v0.29.8 => k8s.io/api v0.35.3
 
@@ -159,17 +173,3 @@ replace k8s.io/klog/v2 v2.120.0 => k8s.io/klog/v2 v2.140.0
 replace k8s.io/kube-openapi v0.0.0-20231010175941-2dd684a91f00 => k8s.io/kube-openapi v0.0.0-20250910181357-589584f1c912
 
 replace k8s.io/metrics v0.29.8 => k8s.io/metrics v0.35.3
-
-replace github.com/google/cel-go => github.com/google/cel-go v0.29.0
-
-replace go.opentelemetry.io/otel/exporters/otlp/otlptrace => go.opentelemetry.io/otel/exporters/otlp/otlptrace v1.45.0
-
-replace go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc => go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.45.0
-
-replace golang.org/x/crypto => golang.org/x/crypto v0.56.0
-
-replace golang.org/x/net => golang.org/x/net v0.60.0
-
-replace golang.org/x/sys => golang.org/x/sys v0.44.0
-
-replace golang.org/x/text => golang.org/x/text v0.41.0
